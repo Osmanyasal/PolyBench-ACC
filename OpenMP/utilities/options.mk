@@ -2,7 +2,7 @@
 ########################################
 
 # Default OpenACC Target is OpenCL
-TARGET_LANG = OPENCL
+# TARGET_LANG = OPENCL
 
 # Uncomment if you want CUDA
 # TARGET_LANG = CUDA
@@ -10,17 +10,17 @@ TARGET_LANG = OPENCL
 # COMPILER OPTIONS -- ACCELERATOR
 ########################################
 
-# Accelerator Compiler
-ACC = hmpp
+# # Accelerator Compiler
+# ACC = hmpp
 
-# Accelerator Compiler flags
-ACCFLAGS = --codelet-required --openacc-target=$(TARGET_LANG)
+# # Accelerator Compiler flags
+# ACCFLAGS = --codelet-required --openacc-target=$(TARGET_LANG)
 
 # COMPILER OPTIONS -- HOST
 ########################################
 
 # Compiler
-CC = gcc
+CC = g++ 
 
 # Compiler flags
-CFLAGS = -O2
+CFLAGS = -O2 #-DPOLYBENCH_DUMP_ARRAYS
