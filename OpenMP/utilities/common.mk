@@ -1,4 +1,4 @@
-INCPATHS = -I$(UTIL_DIR)
+INCPATHS = -I$(UTIL_DIR) -I/usr/local/include/optkit/ -I/usr/local/include/spdlog
 
 BENCHMARK = $(shell basename `pwd`)
 EXE = $(BENCHMARK)_out

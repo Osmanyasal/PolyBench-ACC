@@ -14,13 +14,14 @@
 #include <string.h>
 #include <math.h>
 
+#include <optkit.hh> 
+
 /* Include polybench common header. */
 #include <polybench.h>
 
 /* Include benchmark-specific header. */
 /* Default data type is double, default size is 4000. */
 #include "correlation.h"
-
 
 /* Array initialization. */
 static
@@ -129,6 +130,10 @@ void kernel_correlation(int m, int n,
 
 int main(int argc, char** argv)
 {
+
+  OptimizerKit optkit;
+  OPTKIT_RAPL(main_block,"main_block");
+
   /* Retrieve problem size. */
   int n = N;
   int m = M;
