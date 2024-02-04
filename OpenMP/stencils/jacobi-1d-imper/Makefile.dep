@@ -1,0 +1,33 @@
+jacobi-1d-imper.o: jacobi-1d-imper.c /usr/local/include/optkit/optkit.hh \
+ /usr/local/include/optkit/utils.hh /usr/local/include/optkit/logger.hh \
+ /usr/local/include/optkit/deployment_config.hh \
+ /usr/local/include/optkit/logger_config.hh \
+ /usr/local/include/spdlog/spdlog.h \
+ /usr/local/include/optkit/imgui_logger.hh \
+ /usr/local/include/optkit/type.hh /usr/local/include/optkit/cpu_opt.hh \
+ /usr/local/include/optkit/block_timer.hh \
+ /usr/local/include/optkit/gantt_instrumentor.hh \
+ /usr/local/include/optkit/profiling_config.hh \
+ /usr/local/include/optkit/core_platforms.hh \
+ /usr/local/include/optkit/gui_config.hh \
+ /usr/local/include/optkit/imgui_impl.hh \
+ /usr/local/include/optkit/implot.h \
+ /usr/local/include/optkit/implot_internal.h \
+ /usr/local/include/optkit/implot_charts.hh \
+ /usr/local/include/optkit/rapl.hh /usr/local/include/optkit/query.hh \
+ /usr/local/include/optkit/libpfm4_wrapper.hh \
+ /usr/local/include/optkit/core_profiling.hh \
+ /usr/local/include/optkit/profiler_config.hh \
+ /usr/local/include/optkit/profiling_rapl.hh \
+ /usr/local/include/optkit/rapl_perf_reader.hh \
+ /usr/local/include/optkit/base_profiler.hh \
+ /usr/local/include/optkit/rapl_profiler.hh \
+ /usr/local/include/optkit/rapl_utils.hh \
+ /usr/local/include/optkit/json.hh \
+ /usr/local/include/optkit/profiling_pmu.hh \
+ /usr/local/include/optkit/block_group_profiler.hh \
+ /usr/local/include/optkit/pmu_event_manager.hh \
+ /usr/local/include/optkit/pmu_utils.hh \
+ /usr/local/include/optkit/block_profiler.hh ../../utilities/polybench.h \
+ jacobi-1d-imper.h
+polybench.o: ../../utilities/polybench.c

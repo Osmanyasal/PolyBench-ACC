@@ -7,6 +7,7 @@
  * 
  * Copyright 2013, The University of Delaware
  */
+#include <optkit.hh>
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -79,6 +80,10 @@ void kernel_conv2d(int ni,
 
 int main(int argc, char** argv)
 {
+
+  OptimizerKit optkit{false};
+  OPTKIT_RAPL(main_block, argv[0]);
+
   /* Retrieve problem size. */
   int ni = NI;
   int nj = NJ;

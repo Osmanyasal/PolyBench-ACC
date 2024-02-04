@@ -9,13 +9,12 @@
  */
 #define EXTRALARGE_DATASET
 
+#include <optkit.hh>
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
 #include <math.h>
-
-#include <optkit.hh> 
-
+ 
 /* Include polybench common header. */
 #include <polybench.h>
 
@@ -131,8 +130,8 @@ void kernel_correlation(int m, int n,
 int main(int argc, char** argv)
 {
 
-  OptimizerKit optkit;
-  OPTKIT_RAPL(main_block,"main_block");
+  OptimizerKit optkit{false};
+  OPTKIT_RAPL(main_block,argv[0]);
 
   /* Retrieve problem size. */
   int n = N;
