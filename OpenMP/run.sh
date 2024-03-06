@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./scaling_settings.sh
+
 current=$(pwd)
 echo "current $current"
 
@@ -9,7 +11,7 @@ do
     echo "Entering $directory"
     
     # Change into the directory and run make
-    (cd "$directory" && ./*_out)
+    (cd "$directory" && OMP_NUM_THREADS=$max_cores && taskset -c $cores ./*_out)
     
     echo "Exiting $directory"
     cd $current
