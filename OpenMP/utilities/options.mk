@@ -23,4 +23,4 @@
 CC = g++ 
 
 # Compiler flags
-CFLAGS = -O2 #-DPOLYBENCH_DUMP_ARRAYS
+CFLAGS = -O2 -fno-tree-vectorize -mno-avx #-DPOLYBENCH_DUMP_ARRAYS
